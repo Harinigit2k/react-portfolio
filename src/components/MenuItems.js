@@ -1,41 +1,39 @@
-export const MenuItems =[
-    {
-        title:"Home",
-        urls:"/",
-        cName:"nav-links",
-        icon:" fa-solid fa-house-user"
+export const MenuItems = [
+  {
+      title:"Home",
+      urls:"#hero",
+      cName:"nav-links",
+      icon:"fa-solid fa-house"
 
-   },
-   {
-    title:"About",
-    urls:"/about",
-    cName:"nav-links",
-    icon:" fa-solid fa-circle-user"
-
-},
-{
-    title:"Service",
-    urls:"/service",
-    cName:"nav-links",
-    icon:" fa-solid fa-briefcase"
+ },
+ {
+  title:"About",
+  urls:"#about",
+  cName:"nav-links",
+  icon:" fa-solid fa-circle-info"
 
 },
 {
-    title:"Contact",
-    urls:"/contect",
-    cName:"nav-links",
-    icon:" fa-solid fa-address-book"
-    
+  title:"Skills",
+  urls:"#skills",
+  cName:"nav-links",
+  icon:" fa-solid fa-briefcase"
 
 },
 {
-    title:"Sign Up",
-    urls:"/signup",
-    cName:"nav-links-mobile",
-  
+  title:"Project",
+  urls:"#project",
+  cName:"nav-links",
+  icon:" fa-solid fa-address-book"
 
+},
+{
+  title:"Contact",
+  urls:"#contact",
+  cName:"nav-links",
+  icon: "fa-solid fa-address-book"
 
 }
 
 
-]
+];

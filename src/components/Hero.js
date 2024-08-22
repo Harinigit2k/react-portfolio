@@ -1,28 +1,42 @@
-import HeroImg from '../assets/hero.png';
-import { AiOutlineTwitter, AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
+import React from 'react';
+import './ResumeStyle.css';
 
-export default function Hero() {
-    const config  = {
-        subtitle: "Im a webdeveloper and Designer passionate Web Developer skilled in Python, JavaScript, React, and Django. I specialize in creating responsive and dynamic web applications.",
-        social: {
-            twitter: 'https://twitter.com/jvlcode',
-            facebook: 'https://facebook.com/jvlcode',
-            linkedin: 'https://in.linkedin.com/company/jvl-code'
-        }
+function Hero() {
+    const config = {
+        link: 'https://drive.google.com/file/d/1Q_dGJcwMMmyn0qK_9a8cSs-B91FTnD24/view?usp=drivesdk'
     }
+ return (
+   <div id="hero" className="w-screen h-screen text-white" style={{
+     background: "linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)"
+   }}>
+     <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+       
+       <div class="text-center lg:w-5/12 w-full">
+         <h1 className="my-40 text-5xl font-bold leading-tight">
+           Harini Rajendran
+           <p className=" my-4 text-2xl mb-1">
+           web Developer
 
+           <p className="">
+      I create dynamic, responsive web applications that bring ideas to life. Let's build something great together.
+            </p>
+           </p>
+          
+           <h1 className='res-h1'>Resume</h1>
+           < button className='pb-5'>You can view my resume <a className='btn' href={config.link} download> Download</a></button>
+           
+         
+         </h1>
+         
+             
+         
+         
 
-    return <section className='flex flex-col md:flex-row px-1 py-60 bg-[#080c6e] justify-center'>
-       <div className='md:w-1/2 flex flex-col'>
-            <h1 className=' text-white text-6xl font-hero-font'>Hi, <br/> Im <span className='text-black'></span> Harini Rajendran 
-                <p className='text-2xl'>{config.subtitle}</p>
-            </h1>
-            <div className='flex py-10'>
-                <a href={config.social.twitter} className='pr-5 hover:text-white'><AiOutlineTwitter size={40} /></a>
-                <a href={config.social.facebook} className='pr-5 hover:text-white'><AiOutlineFacebook size={40}/></a>
-                <a href={config.social.linkedin} className='hover:text-white'><AiOutlineLinkedin size={40}/></a>
-            </div>
+         
        </div>
-       <img className='md:w-1/3' src={HeroImg} />
-    </section>
+     </div>
+   </div >
+ );
 }
+
+export default Hero;
