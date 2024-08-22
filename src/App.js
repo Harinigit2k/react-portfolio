@@ -3,7 +3,7 @@ import About from './components/About';
 import {Contact} from './components/Contact';
 
 import Navbar from './components/Navbar';
-
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Projects from './components/Project';
 
@@ -19,6 +19,7 @@ function App() {
         <Projects/>
        
        <Contact/>
+       <Footer/>
         
        
     </div>
